@@ -1,0 +1,116 @@
+.login-container {
+    width: 500px;
+    height: 400px;
+    margin: 100px auto; /* Centraliza a div na página */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    margin-left: 150px;
+  }
+  
+  .input-group label {
+    display:flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 200px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 150px;
+    animation: pulse 2s infinite;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  h1{
+    display: flex;
+    margin-top: -300px;
+    margin-left: 210px;
+    position: absolute;
+    animation: login-animation 3s infinite;
+  }
+  .pipe{
+    width: 50px;
+    position: relative;
+    display: flex;
+    margin-top: 380px;
+    right: -200px;
+    animation: pipe-animation 2s infinite linear;
+  }
+
+  @keyframes login-animation{
+
+    0% {
+        transform: translateY(0) scale(1);
+        color: #333;
+      }
+      25% {
+        transform: translateY(-10px) scale(1.1);
+        color: #4CAF50;
+      }
+      50% {
+        transform: translateY(0) scale(1.2);
+        color: #2196F3;
+      }
+      75% {
+        transform: translateY(10px) scale(1.1);
+        color: #FF5722;
+      }
+      100% {
+        transform: translateY(0) scale(1);
+        color: #333;
+      }
+
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+  @keyframes pipe-animation{
+    from{
+        right: -200px;
+    }
+    to{
+        right: 100%;
+    }
+  }
