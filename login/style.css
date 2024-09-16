@@ -370,3 +370,77 @@ h1 {
 .nav-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/*  Badges  */
+
+/* Social Media Section */
+.social-media {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 50px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-media h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.social-media p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ffafbd;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 175, 189, 0.4);
+}
+
+.badge img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.badge:hover {
+  background-color: #ffc3a0;
+  transform: translateY(-5px);
+}
+
+/* Custom Colors for Each Badge */
+.badge.email {
+  background-color: #3b82f6;
+}
+
+.badge.tiktok {
+  background-color: #ff0050;
+}
+
+.badge.instagram {
+  background-color: #833ab4;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.badge.whatsapp {
+  background-color: #25D366;
+}
+
