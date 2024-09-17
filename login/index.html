@@ -150,6 +150,41 @@
           </a>
         </div>
       </section>
+
+      <!-- App de Avaliações -->
+
+      <div class="container2"></div>
+        <h1>Avaliação de Usuário</h1>
+        <form id="reviewForm">
+          <!--<label for="name">Seu Nome:</label>-->
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+    
+          <p>Por favor, avalie a sua experiência:</p>
+          <div class="stars">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+    
+          <!--<label for="comment">Comentário (opcional):</label>-->
+          <textarea id="comment" name="comment" placeholder="Escreva seu comentário"></textarea>
+    
+          <label for="imageUpload" class="custom-file-upload">Adicionar Imagem</label>
+          <input type="file" id="imageUpload" accept="image/*">
+    
+          <div id="imagePreview"></div>
+          
+          <button type="submit" id="submitBtn">Enviar Avaliação</button>
+        </form>
+    
+        <div id="feedback"></div>
+        <div id="reviewsSection"></div>
+    
+        <button id="showMoreBtn" style="display: none;">Mostrar Mais</button>
+        <button id="showLessBtn" style="display: none;">Mostrar Menos</button>
+      </div>
       
 
 
