@@ -630,3 +630,33 @@ button:hover {
     font-size: 14px;
   }
 }
+
+/* Estilos botao WhattsApp */
+
+/* Estilo do botão de WhatsApp flutuante */
+#whatsappFloatButton {
+  position: fixed;
+  bottom: 20px; /* Distância do botão da parte inferior da tela */
+  right: 20px; /* Distância do botão do lado esquerdo da tela */
+  background-color: #25D366; /* Cor do botão */
+  border-radius: 50%; /* Faz o botão redondo */
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar elevação */
+  z-index: 1000; /* Garante que o botão fique sobre outros elementos */
+  transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+#whatsappFloatButton:hover {
+  background-color: #128C7E; /* Cor do botão ao passar o mouse */
+}
+
+#whatsappFloatButton img {
+  width: 35px; /* Largura do ícone */
+  height: 35px; /* Altura do ícone */
+}
+
+
