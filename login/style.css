@@ -45,7 +45,7 @@ body {
 
 /* Botão de chamada para ação */
 .cta-button {
-  background-color: #1E90FF;
+  background-color: #6da9cc;
   color: #fff;
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -55,7 +55,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #005fbb;
+  background-color: #0f6ea5;
 }
 
 /* Estilos responsivos */
@@ -106,7 +106,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #1E90FF;
+  background-color: #6da9cc;
   padding: 20px;
   text-align: center;
   color: #fff; /* Cor branca para o texto no cabeçalho */
@@ -130,7 +130,7 @@ main {
 }
 
 .intro h2 {
-  color: #1E90FF;
+  color: #6da9cc;
   font-size: 2rem;
 }
 
@@ -149,7 +149,7 @@ main {
 }
 
 .benefit h3 {
-  color: #1E90FF;
+  color: #6da9cc;
   margin-bottom: 10px;
 }
 
@@ -160,7 +160,7 @@ main {
 }
 
 .video-section h2 {
-  color: #1E90FF;
+  color: #6da9cc;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -178,7 +178,7 @@ main {
 }
 
 .cta button {
-  background-color: #1E90FF;
+  background-color: #6da9cc;
   color: #fff; /* Cor branca para o texto do botão */
   padding: 15px 30px;
   font-size: 1.2rem;
@@ -209,7 +209,7 @@ main {
 
 /* Rodapé */
 footer {
-  background-color: #1E90FF;
+  background-color: #6da9cc;
   color: #fff; /* Cor branca para o texto no rodapé */
   text-align: center;
   padding: 10px;
@@ -312,7 +312,7 @@ h1 {
   padding: 15px 30px;
   font-size: 1.2em;
   color: #fff;
-  background-color: #3bc1ff;
+  background-color: #6da9cc;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -521,7 +521,7 @@ h1 {
   width: 100%;
   padding: 12px;
   border: none;
-  background-color: #007BFF;
+  background-color: #6da9cc;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -529,7 +529,7 @@ h1 {
 }
 
 .review-form button:hover {
-  background-color: #0056b3;
+  background-color: #09517a;
 }
 
 .stars {
@@ -576,7 +576,7 @@ h1 {
 /* Botão de upload de imagem */
 .custom-file-upload {
   display: block;
-  background-color: #007BFF;
+  background-color: #6da9cc;
   color: white;
   padding: 10px;
   text-align: center;
@@ -649,5 +649,4 @@ input[type="file"] {
   width: 35px; /* Largura do ícone */
   height: 35px; /* Altura do ícone */
 }
-
 
