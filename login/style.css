@@ -458,39 +458,122 @@ h1 {
   display: flex;
 }*/
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centraliza todos os elementos do formulário */
-}
-
-label {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-weight: bold;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   color: #333;
-  align-self: flex-start; /* Garante que os labels fiquem alinhados à esquerda */
 }
 
-input[type="text"], textarea {
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.average-rating {
+  margin-top: 15px;
+}
+
+.average-rating h2 {
+  font-size: 20px;
+  color: #555;
+}
+
+.stars-average .star {
+  color: #FFD700;
+  font-size: 22px;
+}
+
+.review-form {
+  margin-bottom: 40px;
+}
+
+.review-form input, .review-form textarea {
+  width: 100%;
   padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: 100%;
-  max-width: 500px; /* Limita a largura máxima dos campos de texto */
-  margin-bottom: 10px;
   font-size: 16px;
 }
 
-textarea {
-  resize: vertical;
+.review-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
+.review-form button:hover {
+  background-color: #0056b3;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stars .star {
+  font-size: 32px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.stars .star:hover,
+.stars .star.selected {
+  color: #FFD700;
+}
+
+.reviews {
+  margin-top: 40px;
+}
+
+.review {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+.review h4 {
+  font-size: 18px;
+  color: #007BFF;
+}
+
+.review p {
+  margin: 5px 0;
+}
+
+.review .stars-review .star {
+  font-size: 22px;
+  color: #FFD700;
+}
+
+/* Botão de upload de imagem */
 .custom-file-upload {
   display: block;
   background-color: #007BFF;
@@ -499,8 +582,8 @@ textarea {
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px auto; /* Centraliza o botão */
-  width: fit-content; /* Ajusta o tamanho do botão ao conteúdo */
+  margin: 10px auto;
+  width: fit-content;
 }
 
 input[type="file"] {
@@ -508,128 +591,36 @@ input[type="file"] {
 }
 
 #imagePreview img {
-  max-width: 100%;
+  max-width: 100px;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
-button {
-  background-color: #28a745;
+
+/* Botão de exclusão */
+.delete-btn {
+  background-color: #ff4d4d;
   color: white;
-  padding: 10px;
   border: none;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-  font-size: 16px;
+  float: right;
 }
 
-button:hover {
-  background-color: #218838;
-}
-
-#reviewsSection {
-  margin-top: 30px;
-  text-align: center; /* Centraliza o texto dos comentários */
+.delete-btn:hover {
+  background-color: #ff1a1a;
 }
 
 .review {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
-  margin: 15px auto; /* Centraliza as avaliações e adiciona espaçamento */
-  width: 90%; /* Limita a largura das avaliações */
-  max-width: 500px; /* Limita a largura máxima das avaliações */
-  text-align: left; /* Alinha o texto interno à esquerda */
+  position: relative;
 }
 
-.review img {
-  max-width: 100px;
-  border-radius: 5px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
+/* Outros estilos permanecem os mesmos */
 
-.review h4 {
-  margin-bottom: 5px;
-  color: #333;
-  font-size: 18px;
-}
 
-.review p {
-  margin-bottom: 5px;
-  color: #555;
-  font-size: 16px;
-}
 
-.stars {
-  display: flex;
-  justify-content: center; /* Centraliza as estrelas */
-  width: 100%;
-  margin-bottom: 15px;
-}
 
-.star {
-  cursor: pointer;
-  font-size: 30px; /* Aumenta o tamanho das estrelas para melhor visualização */
-  color: #ccc;
-  transition: color 0.2s ease;
-}
-
-.star.selected {
-  color: #FFD700;
-}
-
-.star:hover {
-  color: #FFD700;
-}
-
-#showMoreBtn, #showLessBtn {
-  display: block;
-  background-color: #007BFF;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px auto; /* Centraliza os botões */
-  transition: background-color 0.3s ease;
-  font-size: 16px;
-  text-align: center;
-  width: fit-content; /* Ajusta o tamanho do botão ao conteúdo */
-}
-
-#showMoreBtn:hover, #showLessBtn:hover {
-  background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 15px;
-  }
-  
-  .custom-file-upload {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .stars {
-    width: 100%;
-  }
-
-  .star {
-    font-size: 24px; /* Estrelas menores em telas pequenas */
-  }
-
-  #showMoreBtn, #showLessBtn {
-    font-size: 14px;
-  }
-}
 
 /* Estilos botao WhattsApp */
 
