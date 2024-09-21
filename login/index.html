@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ursinho Fluffyz</title>
     <link rel="stylesheet" href="style2.css">
-    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <section class="background-section">
@@ -153,14 +153,28 @@
 
       <!-- App de Avaliações -->
 
-      <div class="container2"></div>
-        <h1>Avaliação de Usuário</h1>
-        <form id="reviewForm">
-          <!--<label for="name">Seu Nome:</label>-->
-          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
     
-          <p>Por favor, avalie a sua experiência:</p>
-          <div class="stars">
+      <div class="container">
+        <div class="header">
+          <h1>Avaliações</h1>
+          <div class="average-rating">
+            <h2>Média das Avaliações: <span id="averageRating">0.0</span>/5</h2>
+            <div class="stars-average">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+    
+        <form id="reviewForm" class="review-form">
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+          <textarea id="comment" name="comment" placeholder="Deixe seu comentário" required></textarea>
+          
+          <p>Avaliação:</p>
+          <div class="stars" id="starRating">
             <span class="star" data-value="1">&#9733;</span>
             <span class="star" data-value="2">&#9733;</span>
             <span class="star" data-value="3">&#9733;</span>
@@ -168,23 +182,23 @@
             <span class="star" data-value="5">&#9733;</span>
           </div>
     
-          <!--<label for="comment">Comentário (opcional):</label>-->
-          <textarea id="comment" name="comment" placeholder="Escreva seu comentário"></textarea>
-    
+          <!-- Botão de Upload de Imagem -->
           <label for="imageUpload" class="custom-file-upload">Adicionar Imagem</label>
           <input type="file" id="imageUpload" accept="image/*">
-    
           <div id="imagePreview"></div>
-          
-          <button type="submit" id="submitBtn">Enviar Avaliação</button>
+    
+          <button type="submit">Enviar Avaliação</button>
         </form>
     
-        <div id="feedback"></div>
-        <div id="reviewsSection"></div>
-    
-        <button id="showMoreBtn" style="display: none;">Mostrar Mais</button>
-        <button id="showLessBtn" style="display: none;">Mostrar Menos</button>
+        <div id="reviewsSection" class="reviews"></div>
       </div>
+      
+        
+      
+
+  
+
+
 
       <!-- WhattsApp-->
 
