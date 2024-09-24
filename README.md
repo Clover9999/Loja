@@ -27,5 +27,5 @@ O **Ursinho Fluffyz** é um projeto inovador que traz uma experiência única e 
 
 1. Clone o repositório para a sua máquina local:
    ```bash
-   git clone https://github.com/seu-usuario/ursinho-fluffyz.git
-   cd ursinho-fluffyz
+   https://github.com/seu-usuario/ursinho-fluffyz.git
+   
